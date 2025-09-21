@@ -1,4 +1,5 @@
 // Navbar.jsx
+<<<<<<< HEAD
 'use client';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -73,10 +74,23 @@ const navItems = [
     name: "Admissions",
     path: "/admissions",  
   },
+=======
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+const navItems = [
+  { name: "About", path: "/about" },
+  { name: "Academics", path: "/academics" },
+  { name: "Awards", path: "/awards" },
+  { name: "Placements", path: "/placements" },
+  { name: "Committee", path: "/committee" },
+  { name: "Admissions", path: "/admissions" }, // <-- this one links to Admissions page
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
   { name: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
+<<<<<<< HEAD
   const [activeDropdown, setActiveDropdown] = useState(null);
   const timeoutRef = useRef(null);
 
@@ -139,10 +153,48 @@ const Navbar = () => {
             <Link
               to={item.path}
               className="block whitespace-nowrap transition-colors group-hover:text-blue-300"
+=======
+  return (
+    <motion.div
+      className="fixed top-0 left-0 right-0 flex justify-between items-center h-20 z-50 bg-black bg-opacity-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
+    >
+      {/* Left half: Logo */}
+      <motion.div
+        className="flex items-center pl-8 w-1/2 h-full"
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <Link to={"/"}><img
+          src="/images/trcac_logo.png"
+          alt="College Logo"
+          className="w-20 h-20 object-contain"
+        /></Link>
+        <span className="ml-4 font-bold text-xl text-white">TRCAC</span>
+      </motion.div>
+
+      {/* Right half: Nav items */}
+      <motion.ul className="flex justify-end items-center space-x-6 pr-8 h-full">
+        {navItems.map((item, index) => (
+          <motion.li
+            key={index}
+            className="text-white font-semibold cursor-pointer relative overflow-hidden"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 1 + index * 0.1, ease: "easeOut" }}
+          >
+            <Link
+              to={item.path}
+              className="block hover:text-blue-400 transition-colors"
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
             >
               {item.name}
             </Link>
 
+<<<<<<< HEAD
             {/* Underline */}
             <motion.div
               className="absolute bottom-0 left-0 w-full h-0.5 
@@ -220,6 +272,19 @@ const Navbar = () => {
         ))}
       </motion.ul>
     </motion.nav>
+=======
+            {/* Hover underline effect */}
+            <motion.div
+              className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400"
+              initial={{ scaleX: 0 }}
+              whileHover={{ scaleX: 1 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+            />
+          </motion.li>
+        ))}
+      </motion.ul>
+    </motion.div>
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
   );
 };
 

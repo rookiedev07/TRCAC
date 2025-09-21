@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaAward, FaUsers, FaLightbulb, FaRocket, FaArrowRight } from "react-icons/fa";
 import PixelCard from '../PixelCard';
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
+=======
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
 
 
 const reasons = [
@@ -33,11 +36,14 @@ const reasons = [
 ];
 
 const WhyUs = () => {
+<<<<<<< HEAD
 
 const navigate = useNavigate();
 const handleClick = () => {
     navigate("/contact")
 }
+=======
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
     return (
         <div className="w-full py-20 px-8 md:px-20  text-black">
             <h2 className="text-4xl font-bold text-center mb-12">Why Choose Us?</h2>
@@ -69,7 +75,11 @@ const handleClick = () => {
                     Are you ready to take the next step <br /> toward your future career?
                 </p>
 
+<<<<<<< HEAD
                 <button onClick={handleClick} className="font-bold bg-white px-6 py-3 ml-[200px] flex items-center gap-2 rounded-lg shadow-md 
+=======
+                <button className="font-bold bg-white px-6 py-3 ml-[200px] flex items-center gap-2 rounded-lg shadow-md 
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
     transform duration-300 transition-all hover:bg-[#0A2540] hover:text-white">
                     Enquire Now
                     <FaArrowRight className=" transition-colors duration-300 group-hover:text-white hover:text-white" />

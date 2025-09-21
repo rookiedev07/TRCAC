@@ -18,7 +18,10 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.1",
+<<<<<<< HEAD
     "recharts": "^3.2.1",
+=======
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
     "swiper": "^12.0.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7"

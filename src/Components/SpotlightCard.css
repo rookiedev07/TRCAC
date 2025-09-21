@@ -3,6 +3,10 @@
   border-radius: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12),
     0 8px 24px rgba(0, 0, 0, 0.08);
+<<<<<<< HEAD
+=======
+  background-color: #f9fafb;
+>>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
   padding: 2rem;
   overflow: hidden;
   --mouse-x: 50%;
