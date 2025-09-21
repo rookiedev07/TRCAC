@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./Page/Home_Page";
 import Admissions from "./Components/Admissions/Admissions";
 import Navbar from "./Components/Home/Navbar";
-<<<<<<< HEAD
 import About_Trcac from "./Components/Navbar/About/About_Trcac";
 import About_Trust from "./Components/Navbar/About/About_Trust";
 import Amenities from "./Components/Navbar/About/Amenities";
@@ -43,22 +42,15 @@ import LifeAtTrcac from "./Components/Navbar/Life@trcac/lifeattrcac";
 import Contact from "./Components/Contact/Contact";
 import ScrollToTop from "./Components/ScrollTop";
 
-=======
->>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
-
 const App = () => {
   return (
     <Router>
-<<<<<<< HEAD
       <ScrollToTop/>
-=======
->>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
       {/* Navbar should be outside Routes so it shows on every page */}
       <Navbar />
 
       <div>
         <Routes>
-<<<<<<< HEAD
           <Route path="/" element={<HomePage />} />
 
           {/* Navbar  */}
@@ -109,26 +101,8 @@ const App = () => {
           <Route path="/training" element={<Training_placement />} />
           <Route path="/greenclub" element={<Green_club />} />
           <Route path="/literary" element={<Literary_club />} />
-
-
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/contact" element={<Contact />} />
-
-
-=======
-          {/* Home Route */}
-          <Route
-            path="/"
-            element={
-              <>
-                <HomePage />
-              </>
-            }
-          />
-
-          {/* Admissions Route */}
-          <Route path="/admissions" element={<Admissions />} />
->>>>>>> b8704fa9059042500ecd7c1c6b89fb92e30215b6
 
           {/* (Optional) 404 Page */}
           <Route path="*" element={<h1 className="text-center mt-20">Page Not Found</h1>} />
